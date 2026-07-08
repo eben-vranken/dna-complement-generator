@@ -11,7 +11,9 @@ def invert_dna_string(dna_string):
                 output += "G"
             case "G":
                 output += "C"
-        
+            case _:
+                output += c
+                
     return output
 
 def reverse_dna_string(dna_string):
