@@ -12,8 +12,8 @@ def invert_dna_string(dna_string):
             case "G":
                 output += "C"
             case _:
-                output += c
-                
+                raise ValueError(f"Invalid base: {c}")
+
     return output
 
 def reverse_dna_string(dna_string):
